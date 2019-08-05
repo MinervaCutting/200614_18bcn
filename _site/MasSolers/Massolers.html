@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+	<style>
+		:root {
+  /* Set fade in duration */
+  --fade-time: 0.5s;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+  font-weight: 360;
+  line-height: 130%;
+  
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: #fff solid 1px;
+ 
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.imgs img {
+  cursor: pointer;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--fade-time) ease-in 1 forwards;
+}
+
+/* Media Queries */
+@media(max-width: 600px) {
+  .imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+  <div class="activities" style="margin: auto; padding: 0px;">   
+    <h3>Mas Solers - Venue for Gala diner</h3>                                              <!--insertar titulo-->
+    <p> Mas Solers is a Renaissance style palace from the end of the XIX century, it was many years ago the Gran Casino of Barcelona.</p>
+
+     <p> It offers a lot of venue options with different style and capacities.</p>
+
+    <p>The Hispano Suiza dinning room  is the biggest one, it is a very elegant space decorated in golden and red colors. It has 1216m2 and a capacity for a seated dinner for 800 pax</p>
+
+    <p>The Grace dinning room  is very elegant too but it is more modern. Decorated all in white it is a clean space with a stage in it. It has 783m2 and a capacity for 450pax in a seated dinner</p>
+
+     <p>El Celler is the most special one, it is a rustic space with a big fireplace. It was the old winery of the palace and the ceiling is the original one built traditionally. This dinning room has a capacity for 300 pax in banquet style </p>
+
+
+  
+
+ 
+
+                     <!--insertar el texto-->
+    <hr>
+  </div>
+	<div class="container">
+    <div class="main-img">
+      <img src="massolers.jpg" id="current">
+    </div>
+
+    <div class="imgs"> 
+      <img src="massolers.jpg">                                         <!--insertar las fotos-->
+      <img src="massolers1.jpg">
+      <img src="Massolers2.jpg">
+      <img src="Massolers3.jpg">
+      <img src="Massolers4.jpg">
+      <img src="massolers5.jpg">
+      <img src="massolers6.jpg">
+      <img src="massolers7.jpg">
+    </div>
+  </div>
+  <hr>
+  
+  <section class="container">
+
+<div class ="one" style="float: left;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6)">
+<p><i class="fa fa-map-o" style="font-size:20px;color:orange;"></i>   <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 15px; font-size:14px"><b>Location:</b> Sant Pere de Ribes</p></span>
+<p><i class="fa fa-cutlery" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b>Dinning room capacities:</b> 800, 400, 300, 50 pax</p></span>
+<p><i class="fa fa-eur" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 23px; font-size:14px"><b>Price Level:</b> average-high</p></span>
+</div>
+
+<div class ="two" style="float: right;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6); ">
+
+<p><i class="fa fa-handshake-o" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 3px; font-size:14px"><b>Style:</b> Catering</p></span>
+<p><i class="fa fa-apple" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 10px"><b>Vegetarian Options/Special diets:</b> Available</p></span>
+</div>
+
+</div>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/HvVNTE2Ahcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div>
+</section>
+</div> 
+	<script>
+		const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
+	</script>
+</body>
+</html>

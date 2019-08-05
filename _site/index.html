@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Jette Toft Borner" />
+
+
+<title>AUDIKA GROUP 2020</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="FORMATO.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5,h6",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CE Events</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Quotation</a>
+</li>
+<li>
+  <a href="about.html">Credentials</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">AUDIKA GROUP 2020</h1>
+<h4 class="author"><em>Jette Toft Borner</em></h4>
+<h4 class="date"><em>From 14th June to 18th June 2020</em></h4>
+
+</div>
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="LOGO.png" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script>
+<p><br></p>
+<div id="bcn--tarragona-girona" class="section level1">
+<h1>BCN -TARRAGONA &amp; GIRONA</h1>
+<p>From Barcelona’s Airport we would like to suggest 3 hotels, located in 2 different areas. Hotel Ra and Hotel Dolce Sitges are located south of Barcelona (Tarragona) and Hotel Camiral is in the north (Girona)</p>
+<p>Dolce is located 40 km from the Airport and Ra is around 55km. Both Hotels are located near the beach and both offer high quality service and very nice and comfortable rooms.</p>
+<p>Camiral is located 100km from the airport to the north. It is a different hotel located in a relaxed enviroment, far from the beach and the crowded coast villages. It is surounded by the PGA Golf course and it is a beautiful hotel that offers high quality service.</p>
+<iframe src="https://www.google.com/maps/d/embed?mid=1jLy6VB--hLpDoKe6xPP9lzs9lMKumQB_&amp;hl=es" width="100%" height="480">
+</iframe>
+<p><br></p>
+<div id="tarragona" class="section level2">
+<h2><strong>TARRAGONA</strong></h2>
+<div id="suggested-hotels" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Suggested Hotels</h3>
+<div id="le-meridien-ra-by-marriott" class="section level4">
+<h4>LE MERIDIEN RA BY MARRIOTT</h4>
+<iframe src="HotelRA.html" frameborder="0" width="100%" height="1700" scrolling="no">
+</iframe>
+<p><br></p>
+<p><strong>AUDIKA GROUP ACCOMMODATION</strong></p>
+<p>We will have 125 deluxe rooms, these rooms have about 30 m2, with views od Mediterranean sea or gardens. The spacious rooms are stylishly decorated and have high ceilings, flat-screen TV’s and bathrobes. The Ra Beach’s extensive spa offers hydrotherapy and sea water treatments, as well as massages.</p>
+<p><img src = "https://cdn2.traveler.es/uploads/images/thumbs/es/trav/3/s/2018/34/le_meridien_9222_745x419.jpg" width="100%"></p>
+<p><br></p>
+<p><img src = "https://www.lemeridienra.cat/resourcefiles/roomssmallimages/habitacio-deluxe.jpg" width="100%"></p>
+<p><br></p>
+<p><strong>MEETING FACILITIES</strong></p>
+<p>Following the request, we propose the following meeting rooms for AUDIKA meetings:</p>
+<ul>
+<li><p><strong>Plenary room</strong> <em>RA</em> (282 square meters) and a capacity up to 500 people.Features natural sunlight and LED light.</p></li>
+<li><p><strong>Breakout room</strong> <em>Ayu</em> Boasts large windows tjat allow natural sunlight to pour in.</p></li>
+</ul>
+<p><br></p>
+<p><img src = "https://cache.marriott.com/marriottassets/marriott/REUMD/reumd-meetingroom-1590-hor-clsc.jpg?interpolation=progressive-bilinear&downsize=1180px:*" width="100%"></p>
+<p><br></p>
+<p><img src = "https://cache.marriott.com/marriottassets/marriott/REUMD/reumd-ayu-meeting-6148-hor-clsc.jpg?interpolation=progressive-bilinear&downsize=1180px:*" width="100%"></p>
+<p><br></p>
+<p><strong>DINNERS</strong></p>
+<p>The idea would be to organize the welcome dinner on June 14th at the Beach Club that belongs to the hotel. Any type of dinner, buffet, barbacue, etc. Also decoration could be added, such as torchs, led lights, etc. Space needs to be rent.</p>
+<p><img src ="https://www.thebeachclub.es/resourcefiles/mainimages/bufes-le-meridien-ra-beach-hotel-spa.jpg" width="100%"></p>
+<p>For the Gala dinner on June 17th, we peopose “Grill” restaurant. It is located on the roof of the hotel overseeing all Mediterranean sea. Space needs to be rent, but the cost include tables and chairs, led lights, candles, etc.</p>
+<p><img src ="https://live.staticflickr.com/8548/8895868097_279784c3e2_b.jpg" width="100%"></p>
+</div>
+<div id="dolce-sitges" class="section level4">
+<h4>DOLCE SITGES</h4>
+<iframe src="DolceSitges.html" frameborder="0" width="100%" height="1600" scrolling="no">
+</iframe>
+<p><br></p>
+<p><strong>AUDIKA GROUP ACCOMMODATION</strong></p>
+<p>We will have 125 superior rooms with sun terrace.This superior room with a magnificent terrace is stylish and bathes in Mediterranean sunlight. Furnished with great attention to detail, the superior room features exceptional WiFi and is the ideal refuge to enjoy peace and relaxation in a beautiful landscape.</p>
+<p><img src = "https://www.jet2holidays.com/HotelImages/Web/BCN_72239_Dolce_Sitges_0514_09.jpg" width="100%"></p>
+<p><strong>MEETING FACILITIES</strong></p>
+<p>Following the requests we propose the meeting rooms showed above for AUDIKA meetings:</p>
+<ul>
+<li><strong>Plenary room</strong> “Mediterrani” room. 449m2</li>
+<li><strong>Breakout</strong> “Moscatell”&quot; room. 96 m2</li>
+</ul>
+<p><img src = "http://www.nexotur.com/fotos/1/sitges-mice-dolce-23-1-3.jpg" width="100%"></p>
+<p><br></p>
+<iframe src="PlantillaHotel.html" frameborder="0" width="100%" height="500" scrolling="no">
+</iframe>
+<p><br></p>
+<p><strong>DINNERS</strong></p>
+<p>We will organize a welcome drink and a welcome dinner at the terrace of Verema restaurant. The dinner will be a barbacue food in buffet style. If the weather is bad, the dinner would be inside the restaurant.</p>
+<p><img src = "https://pbs.twimg.com/media/D9Aoqx-XsAAdn8V.jpg" width="100%"></p>
+<br>
+<hr>
+</div>
+</div>
+<div id="suggested-restaurants" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Suggested restaurants</h3>
+<p>The restaurants that we suggest are valid for both hotels because there are no more than 30 minutes from each hotel to the restaurant.</p>
+<p>The area offer different enviroments that’s why some of the restaurant options are located on the beach and some others in the country-side.</p>
+<div id="la-cucanya" class="section level4">
+<h4>LA CUCANYA</h4>
+<iframe src="LaCucanya/LaCucanya.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<hr>
+</div>
+<div id="la-taberna-del-puerto" class="section level4">
+<h4>LA TABERNA DEL PUERTO</h4>
+<iframe src="LaTabernaDelPuerto/LaTabernaDelPuerto.html" frameborder="0" width="100%" height="1000" scrolling="no">
+</iframe>
+<hr>
+</div>
+<div id="restaurant-la-riera" class="section level4">
+<h4>RESTAURANT LA RIERA</h4>
+<iframe src="LaRiera/RestaurantLaRiera.html" frameborder="0" width="100%" height="1000" scrolling="no">
+</iframe>
+<hr>
+</div>
+<div id="mas-solers" class="section level4">
+<h4>MAS SOLERS</h4>
+<iframe src="MasSolers/Massolers.html" frameborder="0" width="100%" height="1700" scrolling="no">
+</iframe>
+<hr>
+</div>
+<div id="masia-san-antonio" class="section level4">
+<h4>MASIA SAN ANTONIO</h4>
+<iframe src="MasiaSanAntonio/MasiaSanAntonio.html" frameborder="0" width="100%" height="1100" scrolling="no">
+</iframe>
+<hr>
+</div>
+</div>
+<div id="budget" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Budget</h3>
+<div id="hotel-ra-budget" class="section level4">
+<h4>HOTEL RA BUDGET</h4>
+<iframe src="https://200614rabudget.netlify.com" frameborder="0" width="100%" height="1500" scrolling="no">
+</iframe>
+<hr>
+</div>
+<div id="hotel-dolce-budget" class="section level4">
+<h4>HOTEL DOLCE BUDGET</h4>
+<iframe src="https://200614dolcebudget.netlify.com" frameborder="0" width="100%" height="1500" scrolling="no">
+</iframe>
+<hr>
+</div>
+</div>
+</div>
+<div id="girona" class="section level2">
+<h2><strong>GIRONA</strong></h2>
+<div id="suggested-hotel" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Suggested Hotel</h3>
+<div id="hotel-camiral-at-pga-catalunya" class="section level4">
+<h4>HOTEL CAMIRAL AT PGA CATALUNYA</h4>
+<iframe src="Camiral.html" frameborder="0" width="100%" height="1550" scrolling="no">
+</iframe>
+<p><br></p>
+<p><strong>AUDIKA GROUP ACCOMMODATION</strong></p>
+<p>Group will have 125 deluxe rooms. Deluxe rooms are contemporary, stylish and spacious. The sumptuous beds, complete with pillow-top mattress, Egyptian cotton linens and plush pillows. Or the spacious en-suite bathrooms finished with oak flooring, hand-painted Spanish tiles and gilt-edged mirrors. Lie back in the generous bathtub, or revive in the rain shower. Then luxuriate in the soft, Spanish-woven cotton towels and robes.</p>
+<p><img src = "https://es.pgacatalunya.com/content/imgsxml/galerias/panel_galeria/1/pga-catalunya-hotel-camiral-gallery-6777.jpg" width="100%"></p>
+<p><br></p>
+<p><img src = "http://www.viajeselcorteingles.es/imagenes/tm/europa/espana/cataluna/gro-gerona-girona-costa-brava/grocm-caldes-malavella/2pl88fdh/mdm-2018-hotel-camiral-superior-deluxe-twin-2.jpg" width="100%"></p>
+<p><br></p>
+<p><strong>MEETING FACILITIES</strong></p>
+<p>Following the request, we propose the following meeting rooms for AUDIKA meetings:</p>
+<ul>
+<li><p><strong>Plenary room</strong> “La Selva”, known as the best meeting room in all region of Girona. It boasts natural sunlight and capacity up to 450 people. Can be turned into a venue for a Gala dinner.</p></li>
+<li><p><strong>Breakout</strong> Emporda - Maresme. These two small meeting rooms actually belongs to a bigger one “Girona” which can be divided in 3 smaller rooms. Total capacity of these 3 rooms is 150 people in total. It boasts natural sunlight as well.</p></li>
+</ul>
+<p><br></p>
+<p><img src = "https://es.pgacatalunya.com/content/imgsxml/galerias/panel_galeria/1/hotelcamiral-meetingsandevents-laselva-2288.jpg" width="100%"></p>
+<p><img src = "https://d3hfxk7rwdcpol.cloudfront.net/CSN/316ada39-edf6-46a5-921e-91f6eb2b090c/images/941a6ee22abd4701aea4ea4afef926f1_LARGE.jpg" width="100%"></p>
+<p><br></p>
+<p><strong>DINNERS</strong></p>
+<p>The global idea for the first night is organize a barbacue dinner at Pool Bar area. Before the dnner, guests will enjoy a welcome drink.</p>
+<p><img src = "https://es.pgacatalunya.com/content/imgsxml/galerias/panel_galeria/1/pga-catalunya-poolbar-1199.jpg" width="100%"></p>
+<p>For the 17th night, we propose a Gala Dinner at “Jardin Sala Banyoles”, a gardens located 5 minutes by walk from the hotel.</p>
+<p><img src = "http://www.cgam.net/wp-content/img/PGA-CLUBHOUSE.jpg" width="100%"></p>
+</div>
+</div>
+<div id="suggested-restaurants-1" class="section level3 tabset tabset-fade tabset-pills">
+<h3>Suggested restaurants</h3>
+<div id="sa-marinada" class="section level4">
+<h4>SA MARINADA</h4>
+<iframe src="SaMarinada/SaMarinada.html" frameborder="0" width="100%" height="1300" scrolling="no">
+</iframe>
+<hr>
+</div>
+<div id="el-trull" class="section level4">
+<h4>EL TRULL</h4>
+<iframe src="ElTrull.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<hr>
+</div>
+<div id="marimurtra" class="section level4">
+<h4>MARIMURTRA</h4>
+<iframe src="Marimurtra/Marimurtra.html" frameborder="0" width="100%" height="1100" scrolling="no">
+</iframe>
+<hr>
+</div>
+<div id="mas-can-ferrer" class="section level4">
+<h4>MAS CAN FERRER</h4>
+<iframe src="MasCanFerrer.html" frameborder="0" width="100%" height="900" scrolling="no">
+</iframe>
+<hr>
+</div>
+</div>
+<div id="budget-1" class="section level3">
+<h3>Budget</h3>
+<iframe src="https://200614budgetcamiral.netlify.com/" frameborder="0" width="100%" height="1500" scrolling="no">
+</iframe>
+<hr>
+</div>
+</div>
+</div>
+<div id="terms-and-conditions" class="section level1">
+<h1>TERMS AND CONDITIONS</h1>
+<ul>
+<li><p>Rates valid for 2020</p></li>
+<li><p>For a group of minimum 115 pax.</p></li>
+<li><p>Cutting Edge Events management fee including in the detailed rates</p></li>
+<li><p>VAT included.</p></li>
+<li><p>No reservation has been done. Availability upon request.</p></li>
+</ul>
+<hr />
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

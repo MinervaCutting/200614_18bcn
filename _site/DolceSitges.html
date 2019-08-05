@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+	<style>
+		:root {
+  /* Set fade in duration */
+  --fade-time: 0.5s;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+  font-weight: 360;
+  line-height: 130%;
+  
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: #fff solid 1px;
+ 
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.imgs img {
+  cursor: pointer;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--fade-time) ease-in 1 forwards;
+}
+
+/* Media Queries */
+@media(max-width: 600px) {
+  .imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+  <div class="activities" style="margin: auto; padding: 0px;">   
+                                            <!--insertar titulo-->
+    <p> Dolce Sitges is a 5 star hotel located just few kilometers away from Barcelona. Guests will expereince luxuries and views of the Mediterranean in the coastal town of Sitges. Most of the rooms features a view of the sea, in the surroundings of Garraf Natural Park.<p>
+
+    <p>The hotel features 4 new climatized outdoor pools working by solar energy. Hotel also has a Gym and personal trainer completely renewed with last technology, TV, Wi-Fi and music.</p>  
+
+    </p>In addition to all the servicies available at the hotel, I would like to emphasize in the meeting rooms. Dolce Sitges features more than 2.00 square meters of meeting space, state of the art audiovisual equipment, modern facilities and meeting packages.</p> 
+
+                     <!--insertar el texto-->
+    <hr>
+  </div>
+	<div class="container">
+    <div class="main-img">
+      <img src="https://y.cdrst.com/foto/hotel-sf/2101/granderesp/hotel-dolce-sitges-exterior-82240bc.jpg" id="current">
+    </div>
+
+    <div class="imgs">                                          <!--insertar las fotos-->
+      <img src="https://d.otcdn.com/imglib/hotelfotos/8/168/hotel-dolce-sitges-048.jpg">
+      <img src="https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/_wyndham-dolce/media/Dolce-Sitges-Rooms-Superior-Room-Sea-View-01-5b8851e008a2a.jpg">
+      <img src="https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/_wyndham-dolce/media/Dolce-Sitges-Rooms-Deluxe-Room-Presidential-Suite-04-5b8851dd39748.jpg">
+      <img src="https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/_wyndham-dolce/media/Dolce-Sitges-Rooms-Bano-470-xxl-5baa721253cd8.jpg">
+      <img src="https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/_wyndham-dolce/media/Dolce-Sitges-Meetings-Overview-Gallery-05-5b89482ea4793.jpg">
+      <img src="http://www.good2b.es/en/wp-content/uploads/sites/2/2015/11/Dolce-Sitges-.jpg">
+      <img src="https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/_wyndham-dolce/media/Dolce-Sitges-Gallery-04-5b89464834cfd.jpg">
+      <img src="https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/_wyndham-dolce/media/Dolce-sitges-Pool-Gallery-06-5ba54f4f5d7bf.jpg">
+    </div>
+  </div>
+  <hr>
+  
+  <section class="container">
+
+<div class ="one" style="float: left;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6)">
+<p><i class="fa fa-map-o" style="font-size:20px;color:orange;"></i>   <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 20px; font-size:14px"><b> Location:</b> 50 km from Barcelona</p></span>
+<p><i class="fa fa-h-square" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 22px; font-size:14px"><b> Category:</b> 5 stars</p></span>
+<p><i class="fa fa-cutlery" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 22px; font-size:14px"><b> Restaurants:</b> 3 Restaurants and 4 bars</p></span>
+<p><i class="fa fa-wifi" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Wifi:</b> Available in rooms andcommon areas</p></span>
+<p><i class="fa fa-users" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 14px"><b>Nr. Rooms:</b>263 rooms</p></span>
+
+</div>
+
+<div class ="two" style="float: right;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6); ">
+<p><i class="fa fa-wheelchair" style="font-size:20px;color:orange;"></i>    <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 21px, font-size:14px"><b> Handicapped facilities: </b>Yes</p></span>
+<p><i class="fa fa-shower" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Swimmingpool:</b> Yes. 4 outdoor pools and 1 spa</p></span>
+<p><i class="fa fa-clock-o" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 21px; font-size:14px"><b> Check in/out:</b> 3pm /noon</p></span>
+<p><i class="fa fa-coffee" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Meeting rooms:</b> 25 rooms: min 10 pax, max 550 pax</p></span>
+</div>
+
+<br>
+
+<br>
+
+</div>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/-j_TKUEA5m4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</section>
+</div> 
+	<script>
+		const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
+	</script>
+</body>
+</html>

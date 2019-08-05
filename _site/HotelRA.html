@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+	<style>
+		:root {
+  /* Set fade in duration */
+  --fade-time: 0.5s;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+  font-weight: 360;
+  line-height: 130%;
+  
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: #fff solid 1px;
+ 
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.imgs img {
+  cursor: pointer;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--fade-time) ease-in 1 forwards;
+}
+
+/* Media Queries */
+@media(max-width: 600px) {
+  .imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+  <div class="activities" style="margin: auto; padding: 0px;">                                                <!--insertar titulo-->
+    <p> This beachfront hotel is a luxury resort set in Sant Salvador Beach on the Costa Daurada, just 35 minutes away from Barcelona aiport. The spacious rooms are stylishly decorated and have high ceilings, flat-screen TV’s and bathrobes. Most rooms feature side or front sea views.<p>
+
+    <p>The resort has 2 restaurants, serving a range of Catalan dishes and buffet cuisine. There are also pool-side, lounge and terrace bars..</p>  
+
+    </p> The Ra Beach’s extensive spa offers hydrotherapy and sea water treatments, as well as massages. There is also a Kids' Club, offering activities and crafts specially designed for young guests to enjoy.</p> 
+
+                     <!--insertar el texto-->
+    <hr>
+  </div>
+	<div class="container">
+    <div class="main-img">
+      <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/156/156824254.jpg" id="current">
+    </div>
+
+    <div class="imgs">                                          <!--insertar las fotos-->
+      <img src="https://imgcy.trivago.com/d_dummy.jpeg,f_auto,q_auto/c_limit,e_improve,h_470,w_805/partnerimages/38/72/387252566.jpeg">
+      <img src="https://thumbnails.trvl-media.com/Ps3yr9S27ukEOM7XhZkbut5O-9Q=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/2000000/1180000/1175200/1175187/a8a1aa16_z.jpg">
+      <img src="https://imgcy.trivago.com/d_dummy.jpeg,f_auto,q_auto/c_limit,e_improve,h_470,w_805/partnerimages/38/72/387252518.jpeg">
+      <img src="https://contenthotels.amimir.com/hotels/es/cataluna_r_22/el_vendrell_c_1433/h_13274/imatges/le-meridien-ra-beach-hotel-amp-spa-10.jpg">
+      <img src="https://imgcy.trivago.com/d_dummy.jpeg,f_auto,q_auto/c_limit,e_improve,h_470,w_805/partnerimages/41/54/415448988.jpeg">
+      <img src="https://imgcy.trivago.com/d_dummy.jpeg,f_auto,q_auto/c_limit,e_improve,h_470,w_805/partnerimages/38/72/387252654.jpeg">
+      <img src="https://imgcy.trivago.com/d_dummy.jpeg,f_auto,q_auto/c_limit,e_improve,h_470,w_805/partnerimages/38/72/387252642.jpeg">
+      <img src="https://www.evadium.com/images/fichas/restaurante-taula-hotel-le-meridien-ra-big.jpg">
+    </div>
+  </div>
+  <hr>
+  
+  <section class="container">
+
+<div class ="one" style="float: left;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6)">
+<p><i class="fa fa-map-o" style="font-size:20px;color:orange;"></i>   <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 20px; font-size:14px"><b> Location:</b> 30 min from Barcelona Airport</p></span>
+<p><i class="fa fa-h-square" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 22px; font-size:14px"><b> Category:</b> 5 stars</p></span>
+<p><i class="fa fa-cutlery" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 22px; font-size:14px"><b> Restaurants:</b> 4 Restaurants and 1 bar</p></span>
+<p><i class="fa fa-wifi" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Wifi:</b> Available in rooms and common areas</p></span>
+<p><i class="fa fa-users" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 14px"><b>Nr. Rooms:</b>143 rooms</p></span>
+
+</div>
+
+<div class ="two" style="float: right;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6); ">
+<p><i class="fa fa-wheelchair" style="font-size:20px;color:orange;"></i>    <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 20px, font-size:14px"><b> Handicapped facilities: </b> Yes</p></span>
+<p><i class="fa fa-shower" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Swimmingpool:</b> Yes. Outdoor and indoor (Spa)</p></span>
+<p><i class="fa fa-clock-o" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 21px; font-size:14px"><b> Check in/out:</b> 3pm /noon</p></span>
+<p><i class="fa fa-coffee" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Meeting rooms:</b> 15 rooms: min 8 pax, max 500 pax</p></span>
+</div>
+
+<br>
+<br>
+
+
+</div>
+<iframe width="100%" height="480" src="https://www.youtube.com/embed/VmHXVyMCPCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</section>
+</div> 
+	<script>
+		const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
+	</script>
+</body>
+</html>
